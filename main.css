@@ -1,0 +1,337 @@
+
+/*  Reset  */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Main CSS */
+body{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 500px){
+  nav ul{
+    text-align:center;
+  }
+  nav ul li{
+    margin: 20px;
+  }
+  .project{
+    margin: 40px 0;
+  }
+
+  .star-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+
+}
+
+#navbar {
+  position:fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #333;
+  display: flex;
+  justify-content: flex-end;
+  
+ 
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  margin: 35px;
+
+ 
+}
+
+nav ul li a:hover{
+  color: #81d8d0;
+  text-decoration: none;
+  margin: 35px;
+  background-color: #333;
+ 
+}
+
+
+
+
+#welcome-section  {
+
+  background: #81d8d0;
+   min-height: 100vh;
+
+}
+
+#welcome-section h1{
+ padding-top: 45vh;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#welcome-section h4{
+  color: #666;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#welcome-section p{
+  color: #666;
+  text-align: left;
+  padding-left: 11%;
+  padding-right: 11%;
+  padding-top: 4%;
+}
+
+.workTitle{
+  font-size:2rem;
+  color: #008081;
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+
+#projectsTop{
+  display:flex;
+ flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+
+
+#projectsBottom{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display:flex;
+ flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#projectsTop img {
+  width: 280px;
+  height: 220px;
+ 
+}
+
+#projectsBottom img {
+  width: 280px;
+  height: 220px;
+
+}
+
+.project-tile{
+  text-align: center;
+  border: solid 8px  #81d8d0;
+}
+
+#projectsTop a{
+  text-decoration: none;
+}
+
+#projectsBottom a{ 
+  text-decoration: none;
+}
+
+.projectTitle{
+  font-size: 1.5rem;
+  color: #008081;
+  padding-top: 2px;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-top: solid 4px  #81d8d0;
+}
+
+.projectTitle a:hover{
+  font-size: 1.5rem;
+  color: white;
+  padding-top: 2px;
+  border-top: solid 2px  #000;
+}
+
+
+.star-tiles{
+  display:flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.star-tiles .card {
+  border: solid 3px #81d8d0;
+  width: 30rem;
+  background: black;
+  color: white;
+}
+
+.star-tiles .card img{
+  height: 12rem;
+  border-bottom: solid 3px #81d8d0;
+}
+
+.card-body{
+  display:flex;
+ justify-content: flex-start;
+}
+
+.card-body ul{
+  padding-left: 0;
+}
+
+.card-body li{
+  list-style-type: none;
+  padding-bottom: .5rem;
+ 
+}
+
+
+
+#contact{
+  background-color: #008081;
+  height: 200px;
+  display:flex;
+  justify-content: center;
+  margin-bottom:0;
+}
+
+.contact-details{
+  
+  background-color: #333;
+  color:white;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 100%;
+  margin: 40px;
+  border: white solid 1px;
+  text-align: center;
+}
+
+
+#contact a:hover {
+  background-color:#fff;
+  text-decoration: none;
+  color:#333;
+}
+footer{
+  background-color: #333;
+
+  padding: 20px;
+}
+
+footer p{
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  width: 200px;
+  height: 200px;
+}
+
+
+/* -------------SENATORS PAGE ----------------*/
+nav{
+    position:fixed;
+    top: 0;
+      width: 100%;
+  }
+nav li{
+    list-style: none;
+    background-color: #333;
+    display: flex;
+    justify-content: flex-end;
+ 
+}
+  
+  
+nav li a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+ padding-right: 4%;
+   
+  }
+  
+nav li a:hover{
+    background-color:#111;
+  
+  }
+  
+  h1{
+    padding-top:8%;
+    text-align: center;
+  }
+  
+  .container{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  
+  figcaption{
+    padding: 2%;
+    text-align: center;
+    font-size: 1.5rem;
+  }

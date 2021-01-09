@@ -1,0 +1,245 @@
+
+/*  Reset  */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Main CSS */
+body{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 500px){
+  nav ul{
+    text-align:center;
+  }
+  nav ul li{
+    margin: 20px;
+  }
+  
+
+}
+
+nav{
+ 
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #333;
+ padding: 3%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-right: 3%;
+
+ 
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  margin: 35px;
+
+ 
+}
+
+nav ul li a:hover{
+  background-color:#111;
+
+}
+
+
+
+h1{
+  padding-top:10%;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 4%;
+}
+
+.addCard{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 420px;
+  height: 460px;
+  border: 1px solid #666;
+  margin: 15px;
+}
+
+h2{
+  align-self: flex-start;
+  font-size: 2rem;
+  padding-bottom: 25%;
+  padding-left: 6%;
+}
+
+form{
+  padding-left: 4%;
+  align-self: flex-start;
+  font-size: 1.5rem;
+  padding-bottom: 6%;
+  display: flex;
+}
+
+input{
+  border-radius: 10rem;
+  height: 2rem;
+  border: 1px solid #666;
+  width: 18rem;
+  align-self: flex-end;
+}
+
+#container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+}
+
+
+
+figure {
+ 
+    display: flex;
+ flex-wrap: wrap;
+justify-content: center;
+    padding: 30px;
+    
+   
+    box-shadow: 5px 5px 5px #666;
+    border: 1px solid #666;
+}
+
+
+
+img{
+  justify-self: center;
+  width: 100%;
+
+}
+
+figcaption{
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.card {
+    width: 420px;
+    height: 500px;
+    transition: transform 1s;
+  
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    margin: 35px;
+  
+   
+  }
+  
+  .card.is-flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    
+    backface-visibility: hidden;
+
+     }
+  
+  
+  
+  .card__face--back {
+    width: 340px;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    transform: rotateY(180deg);
+    flex-wrap: wrap;
+    align-content: space-around;
+  
+  }
+
+  p{
+    font-size: 2rem;
+    color: blue;
+    padding: 8px;
+    font-weight: bold;
+  
+  }
+
+  .newButton{
+    display: flex;
+    justify-content: center;
+  }
+
+  #create{
+    width: 410px;
+    height: 80px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: blue;
+    color: yellow;
+    border-radius: 30px;
+    font-size: 1.5rem;
+  }
