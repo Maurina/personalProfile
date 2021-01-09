@@ -181,7 +181,7 @@ nav ul li a:hover{
 
 .project-tile{
   text-align: center;
-  border: solid 8px  #81d8d0;
+ /*  border: solid 8px  #81d8d0; */
 }
 
 #projectsTop a{
@@ -198,14 +198,14 @@ nav ul li a:hover{
   padding-top: 2px;
   padding-left: 2%;
   padding-right: 2%;
-  border-top: solid 4px  #81d8d0;
+  /* border-top: solid 4px  #81d8d0; */
 }
 
-.projectTitle a:hover{
-  font-size: 1.5rem;
-  color: white;
-  padding-top: 2px;
-  border-top: solid 2px  #000;
+#projectsTop a:hover .projectTitle{
+  color: #fff;
+  background-color:  #008081;
+  
+  
 }
 
 
